@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SafeTravels Privacy Policy — how we collect, use, and protect your personal data." />
+  <title>Privacy Policy — SafeTravels</title>
+  <style>
+    /* ── Reset & base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand:       #1a6b4a;
+      --brand-light: #e8f5ee;
+      --text:        #1a1a1a;
+      --text-mid:    #444444;
+      --text-muted:  #767676;
+      --border:      #d8dde3;
+      --bg:          #ffffff;
+      --bg-alt:      #f7f9fb;
+      --radius:      8px;
+      --max-w:       760px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    /* ── Header bar ───────────────────────────────────────────── */
+    header {
+      background: var(--brand);
+      padding: 0;
+    }
+
+    .header-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 28px 24px 24px;
+    }
+
+    .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 6px;
+    }
+
+    header h1 {
+      font-size: clamp(22px, 5vw, 30px);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    .meta {
+      margin-top: 10px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* ── Main content ─────────────────────────────────────────── */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro {
+      font-size: 15.5px;
+      color: var(--text-mid);
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Section headings ─────────────────────────────────────── */
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 52px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--brand-light);
+      letter-spacing: -0.01em;
+    }
+
+    h2 .num {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-right: 10px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+
+    h3 .sub {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-right: 6px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Body text ────────────────────────────────────────────── */
+    p {
+      color: var(--text-mid);
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    strong { color: var(--text); }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(26,107,74,0.25);
+      transition: border-color 0.15s;
+    }
+
+    a:hover { border-color: var(--brand); }
+
+    /* ── Lists ────────────────────────────────────────────────── */
+    ul {
+      list-style: none;
+      margin: 12px 0 18px;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 10px;
+      color: var(--text-mid);
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 5px;
+      height: 5px;
+      background: var(--brand);
+      border-radius: 50%;
+    }
+
+    /* ── Notice box ───────────────────────────────────────────── */
+    .notice {
+      background: var(--brand-light);
+      border-left: 4px solid var(--brand);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: var(--text-mid);
+    }
+
+    .notice strong { color: var(--brand); }
+
+    /* ── Data table ───────────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 20px 0 24px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead {
+      background: var(--bg-alt);
+    }
+
+    thead th {
+      text-align: left;
+      padding: 11px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    tbody tr:not(:last-child) td {
+      border-bottom: 1px solid var(--border);
+    }
+
+    tbody tr:nth-child(even) { background: var(--bg-alt); }
+
+    td {
+      padding: 10px 16px;
+      color: var(--text-mid);
+      vertical-align: top;
+    }
+
+    td:first-child { color: var(--text); font-weight: 500; }
+
+    .basis-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: var(--brand-light);
+      color: var(--brand);
+      white-space: nowrap;
+    }
+
+    /* ── Third-party cards ────────────────────────────────────── */
+    .third-party-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 580px) {
+      .third-party-grid { grid-template-columns: 1fr; }
+    }
+
+    .tp-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px 14px;
+    }
+
+    .tp-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .tp-card p {
+      font-size: 13.5px;
+      margin-bottom: 10px;
+    }
+
+    .tp-card a {
+      font-size: 12.5px;
+    }
+
+    /* ── Rights list ──────────────────────────────────────────── */
+    .rights-list {
+      margin: 14px 0 20px;
+    }
+
+    .rights-list li {
+      padding: 10px 14px 10px 42px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 8px;
+      font-size: 14.5px;
+      color: var(--text-mid);
+      position: relative;
+    }
+
+    .rights-list li::before { display: none; }
+
+    .rights-list .icon {
+      position: absolute;
+      left: 14px;
+      top: 10px;
+      font-size: 15px;
+      line-height: 1;
+    }
+
+    /* ── Contact card ─────────────────────────────────────────── */
+    .contact-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .contact-card p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .contact-card .email-link {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    /* ── Footer ───────────────────────────────────────────────── */
+    footer {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* ── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 480px) {
+      main { padding: 32px 16px 60px; }
+      .header-inner { padding: 22px 16px 20px; }
+      h2 { font-size: 17px; margin-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <p class="app-name">SafeTravels</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective&nbsp;date:&nbsp;27&nbsp;September&nbsp;2026 &nbsp;·&nbsp; Last&nbsp;updated:&nbsp;20&nbsp;November&nbsp;2026</p>
+    </div>
+  </header>
+
+  <main>
+
+    <p class="intro">
+      SafeTravels is a travel risk intelligence application. This policy explains what personal
+      data we collect, how we use it, who we share it with, and what rights you have.
+    </p>
+
+    <!-- ── Section 1 ─────────────────────────────────────────── -->
+    <h2><span class="num">1</span> Data We Collect</h2>
+
+    <h3><span class="sub">1.1</span> Account data</h3>
+    <p>
+      <strong>Email address</strong> — collected when you create an account via Firebase
+      Authentication. Used to authenticate you. If you send a safe check-in, your email
+      address is stored with that event and included so your chosen emergency contacts can
+      identify the sender.
+    </p>
+
+    <h3><span class="sub">1.2</span> Location data</h3>
+    <p>
+      <strong>Device location</strong> — accessed while the app is in use, with your permission,
+      to identify your country of presence and display relevant information. The app may refresh
+      location while active or when an active trip resumes. This routine lookup is not stored as
+      location history. Typed place names may be sent to the Apple or Google geocoding service
+      available on your device to obtain route coordinates. A safe check-in includes precise location only when you select that option
+      for the check-in. The Firebase record stores latitude and longitude; the notification sends
+      coordinates rounded to four decimal places (approximately 11 metres) to all saved emergency
+      contacts, up to five. Permission can be withdrawn in device settings.
+    </p>
+
+    <h3><span class="sub">1.3</span> Traveler profile</h3>
+    <ul>
+      <li>
+        <strong>Traveler type</strong> (e.g.&nbsp;Tourist, Business Traveler, Journalist) and
+        <strong>home country</strong> — stored in your secure account record on Firebase.
+        Traveler type may match a trip to an approved role-specific exposure finding; it is
+        not used as a fixed score multiplier. Home country supports trip-planning and advisory context.
+        When you open an emergency card, the app may send your two-letter home-country code
+        and the destination's two-letter country code to a Firebase Cloud Function to look for
+        a current, official mission record. The request does not include your name, email,
+        identity-context fields or precise location.
+      </li>
+      <li>
+        <strong>Identity context</strong> — gender, LGBTQ+ status, and travel companions.
+        Stored <strong>on your device only</strong> in local preferences. These fields are
+        not written to Firebase Firestore, are not sent in the current POST-T or Trip Risk
+        Assessment requests, and do not change the current assessment scores.
+      </li>
+    </ul>
+
+    <h3><span class="sub">1.4</span> Trips and check-ins</h3>
+    <ul>
+      <li>
+        <strong>Trip records</strong> — destination, date range, and any generated risk
+        assessments, when generated after all evidence gates pass — stored in your secure account on Firebase, readable only by your
+        authenticated account.
+      </li>
+      <li>
+        <strong>Safe check-in events</strong> — sender email, trip reference, destination label,
+        optional latitude and longitude, delivery result and notification audit details are stored
+        in your account and used to notify all emergency contacts saved in your account, up to five.
+      </li>
+    </ul>
+
+    <h3><span class="sub">1.5</span> Emergency contacts</h3>
+    <p>
+      Names and contact details you voluntarily enter are protected by authenticated
+      access controls and Firebase encryption at rest, and are used only to send safe
+      check-in notifications.
+    </p>
+
+    <h3><span class="sub">1.6</span> Push notification tokens</h3>
+    <p>
+      Your device's Firebase Cloud Messaging (FCM) token is stored in your account to
+      deliver qualifying governed travel alerts. You can withdraw notification permission at any time in your
+      device settings.
+    </p>
+
+    <h3><span class="sub">1.7</span> Subscription data</h3>
+    <p>
+      Subscription status and purchase identifiers are managed by RevenueCat (see §3).
+      We do not store payment card details. After account deletion, SafeTravels uses a
+      server-only write block keyed to the former Firebase account identifier for up to
+      24 hours so a still-valid session token cannot recreate account data. The temporary
+      record is removed after cleanup completes. SafeTravels retains a separate one-way deletion-suppression
+      token so a later store webhook cannot reattach a deleted account identifier.
+    </p>
+
+    <h3><span class="sub">1.8</span> App and account security</h3>
+    <p>
+      SafeTravels uses Firebase App Check to reject requests that do not come from an
+      attested app instance. Android uses Google Play Integrity; Apple platforms use
+      App Attest with DeviceCheck fallback. Google and Apple may process app-instance,
+      device-integrity and attestation information to issue the token. SafeTravels does
+      not store the raw attestation token. It stores short-lived, account-linked request
+      counters containing the function name, UTC count buckets and expiry time to limit
+      automated abuse. These counters are removed during account deletion.
+    </p>
+
+    <!-- ── Section 2 ─────────────────────────────────────────── -->
+    <h2><span class="num">2</span> How We Use Your Data</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Purpose</th>
+            <th>Data used</th>
+            <th>Legal basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Authenticate and secure your account</td>
+            <td>Email</td>
+            <td><span class="basis-tag">Contract</span></td>
+          </tr>
+          <tr>
+            <td>Display governed country risk information where covered</td>
+            <td>Device location resolved to country; your device may send coordinates to its Apple or Google geocoding service</td>
+            <td><span class="basis-tag">Legitimate interest</span></td>
+          </tr>
+          <tr>
+            <td>Match a saved trip to applicable route, activity, and traveler-role evidence</td>
+            <td>Traveler type, itinerary, declared activities</td>
+            <td><span class="basis-tag">Contract / explicit action</span></td>
+          </tr>
+          <tr>
+            <td>Deliver qualifying governed alerts via push notifications</td>
+            <td>FCM token</td>
+            <td><span class="basis-tag">Consent</span></td>
+          </tr>
+          <tr>
+            <td>Send safe check-in notifications</td>
+            <td>Email, emergency contacts, trip label, optional coordinates, delivery audit</td>
+            <td><span class="basis-tag">Contract / explicit action</span></td>
+          </tr>
+          <tr>
+            <td>Manage your subscription</td>
+            <td>RevenueCat identifiers</td>
+            <td><span class="basis-tag">Contract</span></td>
+          </tr>
+          <tr>
+            <td>Protect customer services from automated abuse</td>
+            <td>App attestation token and short-lived account request counters</td>
+            <td><span class="basis-tag">Legitimate interest in service and account security</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notice">
+      <strong>We do not sell your data.</strong> We do not use your data for advertising
+      or profiling for third-party purposes.
+    </div>
+
+    <!-- ── Section 3 ─────────────────────────────────────────── -->
+    <h2><span class="num">3</span> Third Parties</h2>
+
+    <div class="third-party-grid">
+
+      <div class="tp-card">
+        <h4>Google Firebase</h4>
+        <p>Firebase Authentication, Cloud Firestore, Cloud Functions, Firebase App Check,
+        and Firebase Cloud Messaging are provided by Google LLC. App Check uses Google Play
+        Integrity on Android and Apple App Attest with DeviceCheck fallback on Apple platforms.
+        Data is processed in Google-operated services.</p>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          Google Privacy Policy ↗
+        </a>
+      </div>
+
+      <div class="tp-card">
+        <h4>AI-assisted guidance (OpenAI)</h4>
+        <p>Where a destination category has no source-backed level, SafeTravels may ask OpenAI, L.L.C.
+        (through the OpenAI API) to draft separately labelled AI-assisted guidance for that destination.
+        The request contains only the destination and dated, sourced country evidence: official travel
+        advice from Global Affairs Canada and the US Department of State, or Netherlands Ministry of
+        Foreign Affairs advice where those two are silent. It contains no account
+        identifier, name, email address, emergency contacts, trip details or device location. The
+        guidance is generated per destination, stored by SafeTravels and shown to anyone who opens that
+        destination; it is not about you. SafeTravels sends these requests with OpenAI&rsquo;s response
+        storage option turned off; OpenAI&rsquo;s own handling of API data is governed by its policies.
+        This feature runs only after its release checks pass; until then, categories without a level
+        show what to check and official links.</p>
+        <h4>Driving estimates (Google Maps Platform)</h4>
+        <p>When a Pro user asks for a driving estimate, SafeTravels sends the coordinates of that trip&rsquo;s saved
+        route points and the departure time to the Google Routes API, and shows the distance and estimated time it
+        returns, credited to Google Maps. No name, email address or account identifier is sent. SafeTravels does
+        not store the distance, time or route: the result is shown on screen only. To apply usage limits it keeps only
+        the number of driving checks each account made that day, with no route or location. Use of this feature is subject to the
+        <a href="https://maps.google.com/help/terms_maps/" target="_blank" rel="noopener">Google Maps Terms of Service</a>
+        and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <p>SafeTravels may also use OpenAI to translate the Netherlands Ministry of Foreign Affairs&rsquo;
+        public travel advice from Dutch into English. Only the ministry&rsquo;s published text is sent,
+        never anything about you. Where an English version is shown, it is labelled as a machine
+        translation, and the Dutch original stays one tap away.</p>
+        <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">
+          OpenAI Privacy Policy ↗
+        </a>
+      </div>
+
+      <div class="tp-card">
+        <h4>Twilio SendGrid</h4>
+        <p>If you send a safe check-in, SendGrid delivers the email to all emergency contacts saved in
+        your account, up to five. It receives recipient names and email addresses, your sender email,
+        check-in time, trip location label and any coordinates you explicitly chose to include. SafeTravels does not copy every
+        check-in to an undisclosed central monitoring address.</p>
+        <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank" rel="noopener">
+          Twilio Privacy Notice ↗
+        </a>
+      </div>
+
+      <div class="tp-card">
+        <h4>RevenueCat</h4>
+        <p>Subscription management is handled by RevenueCat, Inc. RevenueCat receives your
+        app store purchase identifiers and subscription state.</p>
+        <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">
+          RevenueCat Privacy Policy ↗
+        </a>
+      </div>
+
+      <div class="tp-card">
+        <h4>Apple and Google platform services</h4>
+        <p>Your device may use Apple or Google location and reverse-geocoding services to
+        resolve coordinates to a place or country. Store purchases, when enabled, are
+        processed by Apple App Store or Google Play under the store account you use.</p>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          Google Privacy Policy ↗
+        </a>
+      </div>
+
+      <div class="tp-card">
+        <h4>Apple</h4>
+        <p>The iOS version uses Apple Push Notification service (APNs). The current app does
+        not request App Tracking Transparency permission.</p>
+        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">
+          Apple Privacy Policy ↗
+        </a>
+      </div>
+
+    </div>
+
+    <!-- ── Section 4 ─────────────────────────────────────────── -->
+    <h2><span class="num">4</span> Data Retention</h2>
+
+    <ul>
+      <li>
+        <strong>Account data</strong> is retained while your account is active.
+      </li>
+      <li>
+        <strong>Identity context</strong> (gender, LGBTQ+, companions) is stored only on
+        your device and is deleted when you delete the app or clear its data.
+      </li>
+      <li>
+        <strong>Trip assessments and check-in history</strong> are retained in your account
+        until you delete the relevant trip or your account. Server-side deletion handlers remove
+        assessment subrecords and current and legacy check-in records that the mobile client cannot delete directly.
+      </li>
+      <li>
+        When you <strong>delete your account</strong> (see §5), server-side cleanup begins
+        with the deletion event. Firebase account content and account-identifying fields are
+        permanently deleted or de-identified within 30 days. A server-only account write
+        block may retain the former Firebase account identifier for up to 24 hours solely
+        to prevent data recreation from a still-valid session token. Purchase providers may retain
+        their own transaction records under their stated or legally required retention periods;
+        SafeTravels may retain a de-identified receipt record (event and product identifiers,
+        timestamps, status and payload digest) after its account identifiers are removed.
+      </li>
+    </ul>
+
+    <!-- ── Section 5 ─────────────────────────────────────────── -->
+    <h2><span class="num">5</span> Your Rights and Account Deletion</h2>
+
+    <ul class="rights-list">
+      <li>
+        <span class="icon">👁</span>
+        <strong>Access</strong> your account data via the app's Profile screen.
+      </li>
+      <li>
+        <span class="icon">✏️</span>
+        <strong>Correct</strong> your traveler profile at any time in the Profile screen.
+      </li>
+      <li>
+        <span class="icon">🗑</span>
+        <strong>Delete your account</strong> in-app: Profile → Delete Account. This
+        immediately deletes your Firebase Authentication record and starts server-side removal
+        of Firestore data (profile, trips, contacts, check-ins and related operational records),
+        which completes within 30 days. Local preferences are cleared on the device. RevenueCat
+        and Apple or Google subscription records may be subject to their own retention schedules.
+      </li>
+      <li id="delete-without-app">
+        <span class="icon">✉️</span>
+        <strong>Delete your account without the app</strong>: email
+        <a href="mailto:safe@safetravelstrm.com?subject=Delete%20account">safe@safetravelstrm.com</a>
+        from the email address registered to your SafeTravels account, with the subject
+        &ldquo;Delete account&rdquo;. We delete the account in the same way as in-app deletion: your
+        sign-in record, profile, trips, emergency contacts, check-ins and related operational records
+        are removed, completing within 30 days. Only the limited records described in §4 remain (a
+        de-identified purchase receipt record, and the purchase providers&rsquo; own records). If the
+        request comes from another address, we will ask you to confirm it from the registered one.
+        <strong>We will never ask for your password.</strong> Deleting your account does not cancel a
+        subscription: cancel it in Google Play (Payments &amp; subscriptions) or on your Apple device
+        (Settings &rarr; your name &rarr; Subscriptions).
+      </li>
+      <li>
+        <span class="icon">🔔</span>
+        <strong>Withdraw location or notification permissions</strong> at any time in your
+        device settings.
+      </li>
+      <li>
+        <span class="icon">📩</span>
+        <strong>Request a data export or erasure</strong> by contacting us (see §7).
+      </li>
+    </ul>
+
+    <h3 id="delete-data">Delete selected data without deleting your account</h3>
+    <ul>
+      <li>
+        <strong>In the app:</strong> delete a trip (My Trips &rarr; the trip &rarr; Delete trip); its
+        assessments and the check-in records sent for it are then removed from our servers. Remove an
+        emergency contact in Profile &rarr; Emergency Contacts. Clear the optional device-only context in
+        Profile &rarr; Clear all exposure profile data; it is never stored on our servers.
+      </li>
+      <li>
+        <strong>By email:</strong> write to
+        <a href="mailto:safe@safetravelstrm.com?subject=Delete%20my%20data">safe@safetravelstrm.com</a>
+        from the email address registered to your SafeTravels account, with the subject
+        &ldquo;Delete my data&rdquo;, and say what you want deleted (for example a trip, check-in
+        history or emergency contacts). We complete the request within 30 days. If the request comes
+        from another address, we will ask you to confirm it from the registered one.
+      </li>
+      <li>
+        <strong>What stays while you keep the account:</strong> your sign-in email, account record and
+        plan status are needed to run the account and can be removed only by deleting the account
+        (see above). Purchase records are kept as described in §4.
+      </li>
+      <li>
+        <strong>We will never ask for your password.</strong>
+      </li>
+    </ul>
+
+    <div class="notice">
+      If you are in the <strong>European Economic Area (EEA) or United Kingdom</strong>,
+      you have rights under GDPR / UK GDPR — including the right to object, restrict
+      processing, and lodge a complaint with your supervisory authority.
+    </div>
+
+    <!-- ── Section 6 ─────────────────────────────────────────── -->
+    <h2><span class="num">6</span> Security</h2>
+
+    <p>
+      All data in transit is encrypted using TLS (HTTPS). Firebase Firestore data at rest
+      is encrypted by Google. Access to account records is enforced by security rules;
+      server-generated assessment records are readable only by the trip owner and writable
+      only by the backend. Identity context fields are not written to Firebase.
+    </p>
+
+    <!-- ── Section 7 ─────────────────────────────────────────── -->
+    <h2><span class="num">7</span> Contact</h2>
+
+    <p>For privacy questions, data requests, or to exercise your rights:</p>
+
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <p>Email us at</p>
+        <a class="email-link" href="mailto:safe@safetravelstrm.com">safe@safetravelstrm.com</a>
+      </div>
+    </div>
+
+    <p style="margin-top: 16px;">
+      We will respond to verifiable requests within 30 days.
+    </p>
+
+    <!-- ── Section 8 ─────────────────────────────────────────── -->
+    <h2><span class="num">8</span> Changes to This Policy</h2>
+
+    <p>
+      We may update this policy to reflect changes in the app or applicable law. Material
+      changes will be communicated via an in-app notice. The "Last updated" date at the
+      top of this page reflects the most recent revision.
+    </p>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 SafeTravels &nbsp;·&nbsp;
+      <a href="mailto:safe@safetravelstrm.com">safe@safetravelstrm.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>
