@@ -363,7 +363,7 @@
     <div class="header-inner">
       <p class="app-name">SafeTravels</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective&nbsp;date:&nbsp;27&nbsp;September&nbsp;2026 &nbsp;·&nbsp; Last&nbsp;updated:&nbsp;20&nbsp;November&nbsp;2026</p>
+      <p class="meta">Effective&nbsp;date:&nbsp;27&nbsp;September&nbsp;2026 &nbsp;·&nbsp; Last&nbsp;updated:&nbsp;23&nbsp;November&nbsp;2026</p>
     </div>
   </header>
 
@@ -425,17 +425,17 @@
         authenticated account.
       </li>
       <li>
-        <strong>Safe check-in events</strong> — sender email, trip reference, destination label,
-        optional latitude and longitude, delivery result and notification audit details are stored
-        in your account and used to notify all emergency contacts saved in your account, up to five.
+        <strong>Manual I’m Safe events</strong> — when you send a Pro check-in, we store your verified sender email, trip reference, destination label, delivery result and notification audit details. We use these details to attempt to notify your saved emergency contacts, up to five. We store current coordinates with the event only if you choose to include them.
+      </li>
+      <li>
+        <strong>Automatic check-in deadlines</strong> — when you activate a deadline with Pro, we store the deadline, its saved-trip reference and plan context, and its status, including whether it is active, completed or stopped. After a 10-minute grace period, a periodic server process checks whether a deadline is still active and attempts to email saved emergency contacts if it was missed. We record the outcome of the send attempt. The notice uses saved trip-plan information and includes no current device location. You can view and stop an existing active deadline after Pro expires.
       </li>
     </ul>
 
     <h3><span class="sub">1.5</span> Emergency contacts</h3>
     <p>
       Names and contact details you voluntarily enter are protected by authenticated
-      access controls and Firebase encryption at rest, and are used only to send safe
-      check-in notifications.
+      access controls and Firebase encryption at rest, and are used only for manual I’m Safe emails and notices for separately activated automatic check-in deadlines.
     </p>
 
     <h3><span class="sub">1.6</span> Push notification tokens</h3>
@@ -500,8 +500,8 @@
             <td><span class="basis-tag">Consent</span></td>
           </tr>
           <tr>
-            <td>Send safe check-in notifications</td>
-            <td>Email, emergency contacts, trip label, optional coordinates, delivery audit</td>
+            <td>Send manual I’m Safe emails and process separately activated missed-check-in notices</td>
+            <td>Verified account email, saved emergency contacts, trip-plan context, deadline and status, delivery audit, and optional coordinates for manual emails only</td>
             <td><span class="basis-tag">Contract / explicit action</span></td>
           </tr>
           <tr>
@@ -579,6 +579,7 @@
         email you asked to send. We may use Twilio SendGrid instead to deliver these emails; it then receives
         the same information for the same purpose. SafeTravels does not copy every check-in to an undisclosed
         central monitoring address.</p>
+        <p>For an automatic missed-check-in notice, the email service processes the saved recipients’ names and email addresses, the verified sender email when available, and the notice content needed to deliver it, including the missed deadline and the city and country saved in the trip plan. The notice does not contain current device coordinates. Email-provider acceptance does not confirm inbox delivery or that anyone read the message.</p>
         <a href="https://www.hostinger.com/legal/privacy-policy" target="_blank" rel="noopener">
           Hostinger Privacy Policy ↗
         </a><br>
