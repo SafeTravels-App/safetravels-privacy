@@ -363,7 +363,7 @@
     <div class="header-inner">
       <p class="app-name">SafeTravels</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective&nbsp;date:&nbsp;27&nbsp;September&nbsp;2026 &nbsp;·&nbsp; Last&nbsp;updated:&nbsp;23&nbsp;November&nbsp;2026</p>
+      <p class="meta">Effective&nbsp;date:&nbsp;27&nbsp;September&nbsp;2026 &nbsp;·&nbsp; Last&nbsp;updated:&nbsp;25&nbsp;November&nbsp;2026</p>
     </div>
   </header>
 
@@ -391,7 +391,9 @@
       to identify your country of presence and display relevant information. The app may refresh
       location while active or when an active trip resumes. This routine lookup is not stored as
       location history. Typed place names may be sent to the Apple or Google geocoding service
-      available on your device to obtain route coordinates. A safe check-in includes precise location only when you select that option
+      available on your device, or through SafeTravels’ server to TomTom place search, to obtain route coordinates.
+      For a road journey, choosing “Use my current location (once)” uses your position as the start for that check;
+      it does not create location history. A safe check-in includes precise location only when you select that option
       for the check-in. The Firebase record stores latitude and longitude; the notification sends
       coordinates rounded to four decimal places (approximately 11 metres) to all saved emergency
       contacts, up to five. Permission can be withdrawn in device settings.
@@ -552,14 +554,33 @@
         storage option turned off; OpenAI&rsquo;s own handling of API data is governed by its policies.
         This feature runs only after its release checks pass; until then, categories without a level
         show what to check and official links.</p>
-        <h4>Driving estimates (Google Maps Platform)</h4>
-        <p>When a Pro user asks for a driving estimate, SafeTravels sends the coordinates of that trip&rsquo;s saved
-        route points and the departure time to the Google Routes API, and shows the distance and estimated time it
+        <h4>Driving estimates and road journeys (Google Maps Platform)</h4>
+        <p>When a Pro user asks for a saved-route driving estimate or checks a road journey, SafeTravels sends the
+        coordinates of the saved route points or the two chosen journey places and the departure time to the Google Routes API, and shows the distance and estimated time it
         returns, credited to Google Maps. No name, email address or account identifier is sent. SafeTravels does
         not store the distance, time or route: the result is shown on screen only. To apply usage limits it keeps only
         the number of driving checks each account made that day, with no route or location. Use of this feature is subject to the
         <a href="https://maps.google.com/help/terms_maps/" target="_blank" rel="noopener">Google Maps Terms of Service</a>
         and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <h4>Route briefs and place search (TomTom)</h4>
+        <p>For a Pro route brief, SafeTravels’ server sends the route-point coordinates and departure time to TomTom
+        to obtain a route, travel-time estimate and reported road problems. Place search may send the text you type
+        and the trip’s country to TomTom. We do not attach your account name, email address or account identifier.
+        The requests come from our server, so your device’s IP address is not sent to TomTom by these requests.
+        We do not keep a separate archive of TomTom route geometry, incident responses or search responses.
+        Places you choose to save remain part of your trip plan under this policy’s existing retention rules.
+        Per-account daily usage counts and daily/monthly totals enforce limits, without recording the route or search text.
+        <a href="https://www.tomtom.com/privacy/" target="_blank" rel="noopener">TomTom privacy information</a>.</p>
+        <h4>Weather forecasts along the route (MET Norway)</h4>
+        <p>SafeTravels’ server requests forecasts from the Norwegian Meteorological Institute (MET Norway) for a few
+        points along the route. Coordinates are rounded to two decimal places (about 1 km); we do not attach an
+        account identifier, name or email address. Requests use our server’s address and an identifying SafeTravels
+        contact, rather than your device’s IP address. The rounded coordinates still describe locations on your route.
+        We cache public forecasts by rounded point, without linking them to an account, to avoid duplicate requests.
+        Request-pacing records contain counts, not user identities. Forecasts and SafeTravels’ computed condition flags
+        are not official warnings or confirmation of road closures.
+        <a href="https://www.met.no/en/about-us/privacy" target="_blank" rel="noopener">MET Norway privacy information</a>.
+        Forecast data is credited to MET Norway under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</p>
         <p>SafeTravels may also use OpenAI to translate the Netherlands Ministry of Foreign Affairs&rsquo;
         public travel advice from Dutch into English. Only the ministry&rsquo;s published text is sent,
         never anything about you. Where an English version is shown, it is labelled as a machine
